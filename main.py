@@ -11,8 +11,8 @@ scaler = MinMaxScaler()
 
 device = 'cuda'
 
-train_dataset = pd.read_csv('C:/Users/vedant agnihotri/Desktop/Code/Python/ML-DL/pytorch/neuralnetwork/RNNs/time_s_D/datasets/DailyDelhiClimateTrain.csv')
-test_dataset = pd.read_csv('C:/Users/vedant agnihotri/Desktop/Code/Python/ML-DL/pytorch/neuralnetwork/RNNs/time_s_D/datasets/DailyDelhiClimateTest.csv') 
+train_dataset = pd.read_csv('/datasets/DailyDelhiClimateTrain.csv')
+test_dataset = pd.read_csv('/datasets/DailyDelhiClimateTest.csv') 
 
 train_dataset = train_dataset.drop(columns=['date'])
 test_dataset = test_dataset.drop(columns=['date'])
